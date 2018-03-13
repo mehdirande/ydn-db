@@ -29,7 +29,6 @@ var tearDown = function() {
   }
 };
 
-
 function test_racy() {
   var db_name = 'test_racy_1';
   var schema = {
@@ -53,6 +52,5 @@ function test_racy() {
       db2.close();
     });
   });
-  to_del.push(to_del);
+  to_del.push(db_name);
 }
-
